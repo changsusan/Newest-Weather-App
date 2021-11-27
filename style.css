@@ -1,3 +1,14 @@
-h1 {
-  color: blueviolet;
+.wrap {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+li {
+  list-style: none;
 }
