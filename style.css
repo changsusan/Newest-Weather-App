@@ -3,12 +3,26 @@
   margin: 30px auto;
 }
 .weather-app {
-  max-width: 600px;
   margin: 30px auto;
   padding: 20px;
   border: 1px solid grey;
   border-radius: 5px;
 }
+h1 {
+  font-size: 35px;
+  margin-left: 25px;
+}
 li {
+  text-transform: capitalize;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.temperature {
+  font-size: 30px;
+}
+.degree {
+  position: relative;
 }
