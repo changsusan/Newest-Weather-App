@@ -41,7 +41,17 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
-let apikey = "8bfbf28022488dee7340fe98270ce789";
-let city = "Budapest";
-apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
-axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+  let apikey = "8bfbf28022488dee7340fe98270ce789";
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-element");
+  console.log(cityInputElement.value);
+}
+search("Budapest");
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
