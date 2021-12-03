@@ -50,8 +50,8 @@ function search(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-element");
-  console.log(cityInputElement.value);
+  search(cityInputElement.value);
 }
-search("Budapest");
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
