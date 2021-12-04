@@ -39,7 +39,6 @@ li:first-letters {
 }
 a:link {
   text-decoration: none;
-  color: black;
   cursor: default;
 }
 .weather-temperature img {
