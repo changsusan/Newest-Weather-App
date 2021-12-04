@@ -19,6 +19,7 @@
     <div class="container">
       <div class="wrap">
       <div class="weather-app">
+        <div class="overview">
         <form id="search-form" class="mb-3">
           <div class="row">
           <div class="col-9">
@@ -38,19 +39,23 @@
         <li class ="description"> <span id="description"> </span></li>
         <div class="row">
           <div class="col-6">
-            
+            <div class="clearfix weather-temperature">
               <img
                 src=""
-                alt="snow" id ="icon"
-              /> <span class="temperature" id="temperature">
-             </span><span class="degree"><a href ="#" id="celsius-link" class="active">°C |</a> <a href ="#" id="fahrenheit-link">° F</a></span>
-            
+                alt="snow" 
+                id ="icon"
+                class="float-left"
+              /> <strong id="temperature"></strong>
+             <span class="units"><a href ="#" id="celsius-link" class="active">°C |</a> <a href ="#" id="fahrenheit-link">°F</a></span>
+           </span>
+          </div>
           </div>
           <div class ="col-6">
           <ul>
              <li> Humidity = <span id="humidity"> </span> % </li>
             <li>Wind = <span id="wind"></span>km/h</li>
           </ul>
+          </div>
         </div>
       </div>
     </div>

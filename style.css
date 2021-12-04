@@ -22,12 +22,30 @@ li {
 li:first-letters {
   text-transform: capitalize;
 }
-.temperature {
-  font-size: 30px;
-}
-.degree {
-  position: relative;
-}
+
 .description::first-letter {
   text-transform: capitalize;
+}
+.weather-temperature {
+  margin-right: 15x;
+}
+.weather-temperature .units {
+  position: relative;
+  top: -32px;
+  font-size: 16px;
+}
+.weather-temperature strong {
+  font-size: 64px;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+.weather-temperature img {
+  position: relative;
+  top: -18px;
+}
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
 }
